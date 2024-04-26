@@ -29,6 +29,7 @@ public class PrettyPrinter {
             rows.append("\n");
         }
 
+        rows.append(dots.size() - 1).append(String.format("%" + 13 + "s", "")).append(String.format("%.2f", dots.get(dots.size() - 1).x())).append(String.format("%" + 13 + "s", "")).append(String.format("%.2f", dots.get(dots.size() - 1).y()));
         printString(header.append(rows).toString());
     }
 
